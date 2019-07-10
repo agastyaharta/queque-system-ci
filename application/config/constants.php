@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-define('ASSETS_DIR', 'http://localhost/queque-system-ci/assets');
+define('ASSETS_DIR', 'http://localhost/queque-system-ci/assets/');
 
 // halaman utama diarahin kemana
 define('BASE_DIR', 'http://localhost/queque-system-ci/');

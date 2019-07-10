@@ -11,10 +11,10 @@ class Model_login extends CI_Model
 
     # LOGIN -----------------------------------------------------------------------
     //parameter input $userid sama $passwd
-    function check_login($userid, $passwd)
+    function check_login($userid, $pass)
     {
         // masukin query disini
-        $sql = "SELECT * FROM employee WHERE employeeuser='$userid' AND employeepassword='$passwd' LIMIT 1";
+        $sql = "SELECT * FROM employee WHERE employeeuser='$userid' AND employeepassword='$pass' LIMIT 1";
         $query = $this->Queque->query($sql);
         if ($query) return $query->result_array();
     }
