@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
+// ngambil asset 
 define('ASSETS_DIR', 'http://localhost/queque-system-ci/assets/');
 
 // halaman utama diarahin kemana
@@ -18,7 +19,7 @@ define('ERROR_LOADING_2', 'Koneksi Gagal');
 |--------------------------------------------------------------------------
 | Display Debug backtrace
 |--------------------------------------------------------------------------
-|
+|s
 | If set to TRUE, a backtrace will be displayed along with php errors. If
 | error_reporting is disabled, the backtrace will not display, regardless
 | of this setting

@@ -14,18 +14,17 @@ class Model_login extends CI_Model
     function check_login($userid, $pass)
     {
         // masukin query disini
-        $sql = "SELECT * FROM employee WHERE employeeuser='$userid' AND employeepassword='$pass' LIMIT 1";
-        $query = $this->Queque->query($sql);
-        if ($query) return $query->result_array();
+        $this->Queque->select('*');
+        $this->Queque->from('employee');
+        $this->Queque->where('employeeuser', $userid);
+        $this->Queque->where('employeepassword', $pass);
+        $this->Queque->limit(1);
+        $query = $this->Queque->get('employee');
+        return $query->row();
+
+
+        // $sql = "SELECT * FROM employee WHERE employeeuser='$userid' AND employeepassword='$pass' LIMIT 1";
+        // $query = $this->Queque->query($sql);
+        // if ($query) return $query->result_array();
     }
-
-    // REMOVE LATER IF NECESSARY
-
-    // function count_user()
-    // {
-
-    //     $sql = "SELECT COUNT(*) AS numrows FROM tb_user";
-    //     $query = $this->Snapcard->WHERE("status", "0");
-    //     return $this->db->get();
-    // }
 }
