@@ -25,10 +25,11 @@ class Login extends CI_Controller
 
         if ($this->session->userdata('login')) {
             redirect('Login/Check_login');
-        } else {
+        }
+        // masih bingung yg ini codingannya yg mana 
+        else {
             redirect('Login/Check_login');
         }
-        // $this->load->view('Login/view_login');
     }
 
     // pake employeeuser sama employeepassword
