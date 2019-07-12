@@ -1,3 +1,4 @@
+<!-- PHP FUNCTION CALL ABOVE FOR HEADER AND FOOTER -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +23,8 @@
 
 <body class="bg-gradient-primary">
 
+    <!-- -->
+
     <div class="container">
 
         <!-- Outer Row -->
@@ -38,7 +41,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
                                     </div>
-                                    <form class="user" id="form_login" action="Login/check_login" method="post" role="Login">
+                                    <form class="user" id="form_login" action="Login/_construct" method="post" role="Login">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
                                         </div>
@@ -54,8 +57,9 @@
                                         <button type="submit" name="login_submit" class="btn btn-primary btn-user btn-block" value="Login">
                                             Login
                                         </button>
-
-                                        <?php echo "<p style='color:#FF0000'><br />" . $this->session->flashdata('error_message') . "</p>"; ?>
+                                        <!-- REVISION 11/7/19 23.10-->
+                                        <?php echo "<p style='color:#FF0000'><br />" . $this->session->flashdata('ERROR_LOGIN_1') . "</p>"; ?>
+                                        <!-- REVISION 11/7/19 23.10-->
                                         <hr>
                                     </form>
                                     <hr>

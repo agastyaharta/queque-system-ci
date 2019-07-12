@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Antrian Pasien</title>
+    <title>List Dokter</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo ASSETS_DIR; ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">

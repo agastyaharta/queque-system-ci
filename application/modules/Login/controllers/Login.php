@@ -43,6 +43,7 @@ class Login extends CI_Controller
                 $userid = strtoupper($this->input->post('employeeuser'));
                 $passwd = $this->input->post('employeepassword');
                 $pass = md5($passwd);
+                $query = $this->Queque->get('employee');
 
                 $data = $this->Model_login->check_login($userid, $pass);
                 if ($data <> NULL) {
@@ -55,7 +56,9 @@ class Login extends CI_Controller
                     redirect('Login/check_login');
                 }
             } else {
+                // $this->load->view('template/template_header');
                 $this->load->view('Login/view_login');
+                // $this->load->view('template/template_footer');
             }
         }
 
