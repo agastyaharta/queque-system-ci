@@ -32,10 +32,10 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <i class="fas fa-hospital"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">LEEMOCO <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">LEEMOCO Hospital</div>
             </a>
 
             <!-- Divider -->
@@ -45,7 +45,7 @@
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo base_url(); ?>Antrian/index">
                     <i class="fas fa-fw fa-procedures"></i>
-                    <span>List Pasien</span></a>
+                    <span>Antrian Pasien</span></a>
             </li>
 
             <!-- Divider -->
@@ -60,7 +60,7 @@
             <!-- ganti href -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>Dokter/index">
-                    <i class="fas fa-fw fa-cog"></i>
+                    <i class="fas fa-fw fa-notes-medical"></i>
                     <span>List Dokter</span>
                 </a>
             </li>
@@ -68,8 +68,8 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <!-- ganti href -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="<?php echo base_url(); ?>PasienDone/index">
-                    <i class="fas fa-fw fa-wrench"></i>
+                <a class="nav-link collapsed" href="<?php echo base_url(); ?>Pasien/index">
+                    <i class="fas fa-fw fa-list-ul"></i>
                     <span>Pasien Terdaftar</span>
                 </a>
             </li>
@@ -298,7 +298,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Antrian Dokter</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Daftar Antrian Pasien</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
@@ -311,6 +311,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">INFORMASI TERKINI</div>
+                                            <br>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <marquee>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</marquee>
                                             </div>
@@ -323,49 +324,7 @@
                             </div>
                         </div>
 
-                        <!-- Earnings (Monthly) Card Example
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                              aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
 
-                        <!-- Pending Requests Card Example
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
                     </div>
 
                     <!-- Content Row -->
@@ -447,92 +406,8 @@
                                 </div>
                             </div>
 
-                            <!-- Color System -->
-                            <!-- <div class="row">
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-primary text-white shadow">
-                    <div class="card-body">
-                      Primary
-                      <div class="text-white-50 small">#4e73df</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-success text-white shadow">
-                    <div class="card-body">
-                      Success
-                      <div class="text-white-50 small">#1cc88a</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-info text-white shadow">
-                    <div class="card-body">
-                      Info
-                      <div class="text-white-50 small">#36b9cc</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-warning text-white shadow">
-                    <div class="card-body">
-                      Warning
-                      <div class="text-white-50 small">#f6c23e</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-danger text-white shadow">
-                    <div class="card-body">
-                      Danger
-                      <div class="text-white-50 small">#e74a3b</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-secondary text-white shadow">
-                    <div class="card-body">
-                      Secondary
-                      <div class="text-white-50 small">#858796</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div> -->
-
                             <div class="col-lg-6 mb-4">
 
-                                <!-- Illustrations -->
-                                <!-- <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                      src="img/undraw_posting_photo.svg" alt="">
-                  </div>
-                  <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow"
-                      href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that
-                    you can use completely free and without attribution!</p>
-                  <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
-                </div>
-              </div> -->
-
-                                <!-- Approach -->
-                                <!-- <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                </div>
-                <div class="card-body">
-                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor
-                    page performance. Custom CSS classes are used to create custom components and custom utility
-                    classes.</p>
-                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap
-                    framework, especially the utility classes.</p>
-                </div>
-              </div> -->
 
                             </div>
                         </div>
@@ -547,7 +422,7 @@
                 <footer class="sticky-footer bg-white">
                     <div class="container my-auto">
                         <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; Your Website 2019</span>
+                            <span>Copyright &copy; LEEMOCO Hospital System</span>
                         </div>
                     </div>
                 </footer>
@@ -569,15 +444,15 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Anda Ingin Keluar</h5>
                         <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                         </button>
                     </div>
-                    <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                    <div class="modal-body">Tekan tombol Logout apabila anda ingin keluar dari sesi anda</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="login.html">Logout</a>
+                        <a class="btn btn-primary" href="Login/view_login">Logout</a>
                     </div>
                 </div>
             </div>

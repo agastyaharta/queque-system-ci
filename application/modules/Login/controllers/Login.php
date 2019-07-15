@@ -27,9 +27,9 @@ class Login extends CI_Controller
             redirect('Login/Check_login');
         }
         // masih bingung yg ini codingannya yg mana 
-        else {
-            redirect('Login/view_login');
-        }
+        // else {
+        //     redirect('Login/view_login');
+        // }
     }
 
     // pake employeeuser sama employeepassword
