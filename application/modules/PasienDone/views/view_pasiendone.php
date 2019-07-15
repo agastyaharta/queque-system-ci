@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Antrian Pasien</title>
+    <title>Pasien Terdaftar</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo ASSETS_DIR; ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -43,8 +43,8 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url(); ?>Antrian/index">
-                    <i class="fas fa-fw fa-procedures"></i>
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>List Pasien</span></a>
             </li>
 
@@ -59,7 +59,7 @@
             <!-- Nav Item - Pages Collapse Menu -->
             <!-- ganti href -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="<?php echo base_url(); ?>Dokter/index">
+                <a class="nav-link collapsed" href="" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>List Dokter</span>
                 </a>
@@ -68,7 +68,7 @@
             <!-- Nav Item - Utilities Collapse Menu -->
             <!-- ganti href -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="<?php echo base_url(); ?>PasienDone/index">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Pasien Terdaftar</span>
                 </a>
@@ -310,13 +310,13 @@
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">INFORMASI TERKINI</div>
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">INFORMASI TERKINI</div>x
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">
                                                 <marquee>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</marquee>
                                             </div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-user-md fa-4x text-gray-300"></i>
+                                            <i class="fas fa-user-md fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>

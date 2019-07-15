@@ -28,7 +28,7 @@ class Login extends CI_Controller
         }
         // masih bingung yg ini codingannya yg mana 
         else {
-            redirect('Login/Check_login');
+            redirect('Login/view_login');
         }
     }
 

@@ -21,7 +21,7 @@ class Model_login extends CI_Model
         $this->Queque->where('employeepassword', $pass);
         $this->Queque->limit(1);
         $this->load->database('Queque', TRUE);
-        // $query = $this->Queque->get('employee');
+        $query = $this->Queque->get('employee');
         return $query->row();
     }
 }
