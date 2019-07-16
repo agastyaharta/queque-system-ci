@@ -10,28 +10,47 @@ class Login extends CI_Controller
         parent::__construct();
         //ngeload model duluan
         $this->load->model('Model_login');
-        $this->no_cache();
+        // $this->no_cache();
     }
 
-    protected function no_cache()
-    {
-        header('Cache-Control: no-store, no-cache, must-revalidate');
-        header('Cache-Control: post-check=0, pre-check=0', false);
-        header('Pragma: no-cache');
-    }
+    // protected function no_cache()
+    // {
+    //     header('Cache-Control: no-store, no-cache, must-revalidate');
+    //     header('Cache-Control: post-check=0, pre-check=0', false);
+    //     header('Pragma: no-cache');
+    // }
 
     public function index()
     {
 
-        if ($this->session->userdata('login')) {
-            redirect('Login/Check_login');
+        $session = $this->session->userdata(isLogin);
+        if ($session == FALSE) {
+            $this->load->view('Login/view_login');
+        } else {
+            redirect('Antrian/view_antrian');
         }
+
+        // if ($this->session->userdata('login')) {
+        //     redirect('Login/Check_login');
+        // }
         // masih bingung yg ini codingannya yg mana 
         // else {
         //     redirect('Login/view_login');
         // }
     }
 
+    // belom selesaii 
+    
+    function do_login()
+    {
+        $userid = $this->input->post('employeeuser');
+        $passwd = $this->input->post('employeepassword');
+
+        $cek = $this->Model_login->check_login($userid, md5($passwd));
+        if (count($cek) == 1) {
+            foreach ($cek as $cek) { }
+        }
+    }
     // pake employeeuser sama employeepassword
     function Check_login()
     {
