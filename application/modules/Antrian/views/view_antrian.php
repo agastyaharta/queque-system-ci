@@ -117,7 +117,7 @@
                     <!-- Topbar Search -->
                     <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Cari Nama Pasien" aria-label="Search" aria-describedby="basic-addon2" id="search_text" nama="search_text">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
                                     <i class="fas fa-search fa-sm"></i>
@@ -364,6 +364,10 @@
                                             <tbody>
                                             </tbody>
                                         </table>
+                                        <div class="resulttable_antrian">
+                                            <a>Test</a>
+                                        </div>
+
                                         <canvas id="myAreaChart"></canvas>
                                     </div>
                                 </div>
@@ -469,5 +473,8 @@
         <script src="<?php echo ASSETS_DIR; ?>js/sb-admin-2.min.js"></script>
 
 </body>
+
+<script $(document).ready(function() { load_data(); function load_data(query){ $.ajax({ url:"<?php echo base_url(); ?>Antrian/Ajaxsearch_antrian/fetch", method:"POST", data:{query:query}, success:function (date) { $('#resulttable_antrian').html(data); } }) } });>
+</script>
 
 </html>
