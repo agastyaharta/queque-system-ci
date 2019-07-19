@@ -96,10 +96,10 @@ $db['default'] = array(
 );
 
 
-$active_group = 'Snapcard';
+$active_group = 'Queque';
 $query_builder = TRUE;
 
-$db['Snapcard'] = array(
+$db['Queque'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',

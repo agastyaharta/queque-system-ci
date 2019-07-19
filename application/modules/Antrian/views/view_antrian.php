@@ -368,118 +368,124 @@
                                         <div class="resulttable_antrian">
                                             <?php
                                             if ($fetch_data->num_rows() > 0) { } else {
-                                                # code...
-                                            }
-                                            ?>
+                                                foreach ($variable as $key => $value) {
+                                                    ?>
+                                                    <tr>
+                                                        <td><?php echo $row->registrationid ?></td>
+                                                        <td><?php echo $row->patientname ?></td>
+                                                        <td><?php echo $row->action ?></td>
+                                                        }
+                                                        }
+
+                                                </div>
+
+                                                <canvas id="myAreaChart"></canvas>
+                                            </div>
                                         </div>
-
-                                        <canvas id="myAreaChart"></canvas>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Content Row -->
+                            <div class="row">
+
+                                <!-- Content Column -->
+                                <div class="col-lg-6 mb-4 col-xl">
+
+                                    <!-- Project Card Example -->
+                                    <div class="card shadow mb-4">
+                                        <div class="card-header py-3">
+                                            <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+                                            <div class="progress mb-4">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 mb-4">
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.container-fluid -->
+
                         </div>
-                    </div>
+                        <!-- End of Main Content -->
 
-                    <!-- Content Row -->
-                    <div class="row">
-
-                        <!-- Content Column -->
-                        <div class="col-lg-6 mb-4 col-xl">
-
-                            <!-- Project Card Example -->
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
+                        <!-- Footer -->
+                        <footer class="sticky-footer bg-white">
+                            <div class="container my-auto">
+                                <div class="copyright text-center my-auto">
+                                    <span>Copyright &copy; LEEMOCO Hospital System</span>
                                 </div>
                             </div>
-
-                            <div class="col-lg-6 mb-4">
-
-
-                            </div>
-                        </div>
+                        </footer>
+                        <!-- End of Footer -->
 
                     </div>
-                    <!-- /.container-fluid -->
+                    <!-- End of Content Wrapper -->
 
                 </div>
-                <!-- End of Main Content -->
+                <!-- End of Page Wrapper -->
 
-                <!-- Footer -->
-                <footer class="sticky-footer bg-white">
-                    <div class="container my-auto">
-                        <div class="copyright text-center my-auto">
-                            <span>Copyright &copy; LEEMOCO Hospital System</span>
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Anda Ingin Keluar</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Tekan tombol Logout apabila anda ingin keluar dari sesi anda</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="Login/view_login">Logout</a>
+                            </div>
                         </div>
                     </div>
-                </footer>
-                <!-- End of Footer -->
-
-            </div>
-            <!-- End of Content Wrapper -->
-
-        </div>
-        <!-- End of Page Wrapper -->
-
-        <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top">
-            <i class="fas fa-angle-up"></i>
-        </a>
-
-        <!-- Logout Modal-->
-        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Anda Ingin Keluar</h5>
-                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">Tekan tombol Logout apabila anda ingin keluar dari sesi anda</div>
-                    <div class="modal-footer">
-                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                        <a class="btn btn-primary" href="Login/view_login">Logout</a>
-                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Bootstrap core JavaScript-->
-        <script src="<?php echo ASSETS_DIR; ?>vendor/jquery/jquery.min.js"></script>
-        <script src="<?php echo ASSETS_DIR; ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <!-- Bootstrap core JavaScript-->
+                <script src="<?php echo ASSETS_DIR; ?>vendor/jquery/jquery.min.js"></script>
+                <script src="<?php echo ASSETS_DIR; ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Core plugin JavaScript-->
-        <script src="<?php echo ASSETS_DIR; ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+                <!-- Core plugin JavaScript-->
+                <script src="<?php echo ASSETS_DIR; ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
-        <!-- Custom scripts for all pages-->
-        <script src="<?php echo ASSETS_DIR; ?>js/sb-admin-2.min.js"></script>
+                <!-- Custom scripts for all pages-->
+                <script src="<?php echo ASSETS_DIR; ?>js/sb-admin-2.min.js"></script>
 
-</body>
+        </body>
 
-<script $(document).ready(function() { load_data(); function load_data(query){ $.ajax({ url:"<?php echo base_url(); ?>Antrian/Ajaxsearch_antrian/fetch", method:"POST", data:{query:query}, success:function (date) { $('#resulttable_antrian').html(data); } }) } });>
-</script>
+        <script $(document).ready(function() { load_data(); function load_data(query){ $.ajax({ url:"<?php echo base_url(); ?>Antrian/Ajaxsearch_antrian/fetch", method:"POST", data:{query:query}, success:function (date) { $('#resulttable_antrian').html(data); } }) } });>
+        </script>
 
-</html>
+        </html>
