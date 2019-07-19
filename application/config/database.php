@@ -95,16 +95,16 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
-// new db 
-$active_group = 'Queque';
+
+$active_group = 'Snapcard';
 $query_builder = TRUE;
 
-$db['Queque'] = array(
+$db['Snapcard'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-	'username' => 'db_queque_fix',
+	'username' => 'root',
 	'password' => '',
-	'database' => '',
+	'database' => 'db_queque',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

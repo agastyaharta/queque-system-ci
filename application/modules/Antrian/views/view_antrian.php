@@ -353,6 +353,7 @@
                                 <!-- Card Body -->
                                 <div class="card-body">
                                     <div class="chart-area">
+                                        <!-- nanti di modif lagi -->
                                         <table id="lookup" class="table table-bordered table-hover">
                                             <thead bgcolor="#eeeeee">
                                                 <tr>
@@ -365,7 +366,11 @@
                                             </tbody>
                                         </table>
                                         <div class="resulttable_antrian">
-                                            <a>Test</a>
+                                            <?php
+                                            if ($fetch_data->num_rows() > 0) { } else {
+                                                # code...
+                                            }
+                                            ?>
                                         </div>
 
                                         <canvas id="myAreaChart"></canvas>

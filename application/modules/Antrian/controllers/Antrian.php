@@ -7,7 +7,8 @@ class Antrian extends CI_Controller
     // public function 
     public function index()
     {
-
-        $this->load->view('Antrian/view_antrian');
+        $this->load->model('Antrian/Model_antrian');
+        $data["fetch_data"] = $this->main_model->fetch_data();
+        $this->load->view('Antrian/view_antrian', $data);
     }
 }
