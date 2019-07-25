@@ -365,6 +365,7 @@
                                             <tbody>
                                             </tbody>
                                         </table>
+                                        <!-- actionnya belom selesai  -->
                                         <div class="resulttable_antrian">
                                             <?php
                                             if ($fetch_data->num_rows() > 0) { } else {
@@ -373,13 +374,13 @@
                                                     <tr>
                                                         <td><?php echo $row->registrationid ?></td>
                                                         <td><?php echo $row->patientname ?></td>
-                                                        <td><?php echo $row->action ?></td>
+                                                        <td><?php echo $row->action ?> </td>
                                                         }
                                                         }
 
                                                 </div>
 
-                                                <canvas id="myAreaChart"></canvas>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -485,7 +486,9 @@
 
         </body>
 
-        <script $(document).ready(function() { load_data(); function load_data(query){ $.ajax({ url:"<?php echo base_url(); ?>Antrian/Ajaxsearch_antrian/fetch", method:"POST", data:{query:query}, success:function (date) { $('#resulttable_antrian').html(data); } }) } });>
-        </script>
+        <!-- <script $(document).ready(function() { load_data(); function load_data(query){ $.ajax({ url:"<?php echo base_url(); ?>Antrian/Ajaxsearch_antrian/fetch", method:"POST", data:{query:query}, success:function (date) { $('#resulttable_antrian').html(data); } }) } });>
+        </script> -->
 
         </html>
+
+    

@@ -5,9 +5,11 @@ class Model_antrian extends CI_Model
     {
         // ambil db dari database.php disini
         parent::__construct();
-        $this->Snapcard = $this->load->database('Snapcard', TRUE);
+        $this->Queque = $this->load->database('Queque', TRUE);
     }
 
+
+    // masih salah 
     public function fetch_data()
     {
         $sql = "SELECT registration.`registrationid`, patient.`patientname`
@@ -16,7 +18,7 @@ class Model_antrian extends CI_Model
         WHERE registration.`statuss` = 'Valid' AND registration.`doctorid` IS NULL
         ORDER BY registrationdate ";
 
-        $query = $this->Snapcard->query($sql);
+        $query = $this->Queque->query($sql);
         if ($query) return $query->result_array();
     }
 }
