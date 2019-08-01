@@ -1,4 +1,5 @@
 <!-- PHP FUNCTION CALL ABOVE FOR HEADER AND FOOTER -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +24,8 @@
 
 <body class="bg-gradient-primary">
 
-    <!-- -->
+    <!-- MULAI DARI SINI -->
+
 
     <div class="container">
 
@@ -39,28 +41,21 @@
                             <div class="col-lg">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">LOGIN FORM</h1>
                                     </div>
-                                    <form class="user" id="form_login" action="Login/Check_Login" method="post" role="Login">
+                                    <form action="<?php echo base_url("Login/check_login"); ?>" method="post" class="user" role="login">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                            <input type="text" class="form-control form-control-user" id="InputUsername" aria-describedby="emailHelp" name="userid" placeholder="Masukan Username">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                                            <input type="password" class="form-control form-control-user" id="InputPassword" name="password" placeholder="Masukkan Password" required class="form-control input-md">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Remember Me</label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" name="login_submit" class="btn btn-primary btn-user btn-block" value="Login">
+                                        <button type="submit" class="btn btn-primary btn-user btn-block" name="login_submit" value="Login">
                                             Login
                                         </button>
-                                        <!-- REVISION 11/7/19 23.10-->
-                                        <?php echo "<p style='color:#FF0000'><br />" . $this->session->flashdata('ERROR_LOGIN_1') . "</p>"; ?>
-                                        <!-- REVISION 11/7/19 23.10-->
                                         <hr>
+                                        <!--ADD MORE DETAILS HERE-->
+                                        <h4 align="center">LEEMOCO HealthCare System</h4>
                                     </form>
                                     <hr>
                                     <div class="text-center">
@@ -72,7 +67,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -81,6 +75,7 @@
         </div>
 
     </div>
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="<?php echo ASSETS_DIR; ?>vendor/jquery/jquery.min.js"></script>

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Antrian Pasien</title>
+    <title>Update Data Pasien</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo ASSETS_DIR; ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -70,7 +70,7 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="<?php echo base_url(); ?>Pasien/index">
                     <i class="fas fa-fw fa-list-ul"></i>
-                    <span>Pasien Terdaftar</span>
+                    <span>Ambil Antrian Pasien</span>
                 </a>
             </li>
 
@@ -298,7 +298,7 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Daftar Antrian Pasien</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Pasien Terdaftar</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
@@ -354,33 +354,17 @@
                                 <div class="card-body">
                                     <div class="chart-area">
                                         <table id="lookup" class="table table-bordered table-hover">
-                                            <!-- table header -->
                                             <thead bgcolor="#eeeeee">
                                                 <tr>
-                                                    <th>ID Registrasi</th>
+                                                    <th>CONTOH</th>
                                                     <th>Nama Pasien</th>
                                                     <th> Action </th>
                                                 </tr>
                                             </thead>
-                                            <!-- table container -->
                                             <tbody>
-                                                <?php
-                                                foreach ($dataAntrian->result() as $santuy) { }
-                                                ?>
-                                                <tr>
-                                                    <td><?php echo $santuy->registrationid; ?> </td>
-                                                    <td><?php echo $santuy->patientname; ?> </td>
-                                                    <td>
-                                                        <center>
-                                                            <form action="coba.php" method="POST">
-                                                                <input type="hidden" name="id" value="' . $id . '">
-                                                                <button class="btn btn-success btn-block">Select</button></form>
-                                                        </center>
-                                                    </td>
-                                                </tr>
                                             </tbody>
                                         </table>
-
+                                        <canvas id="myAreaChart"></canvas>
                                     </div>
                                 </div>
                             </div>
