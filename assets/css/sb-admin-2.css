@@ -4417,7 +4417,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4461,7 +4461,8 @@ input[type="button"].btn-block {
   text-decoration: none;
 }
 
-.navbar-nav {
+.navbar-nav:hover {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4475,12 +4476,13 @@ input[type="button"].btn-block {
 }
 
 .navbar-nav .nav-link {
+  position: fixed;
   padding-right: 0;
   padding-left: 0;
 }
 
 .navbar-nav .dropdown-menu {
-  position: static;
+  position: fixed;
   float: none;
 }
 

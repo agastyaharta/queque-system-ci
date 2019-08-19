@@ -326,51 +326,6 @@
 
 
                     </div>
-
-                    <!-- Content Row -->
-
-                    <div class="row">
-
-                        <!-- Area Chart -->
-                        <div class="col-xl col-lg-7">
-                            <div class="card shadow mb-4">
-                                <!-- Card Header - Dropdown -->
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">List Antrian Pasien</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card Body -->
-                                <div class="card-body">
-                                    <div class="chart-area">
-                                        <table id="lookup" class="table table-bordered table-hover">
-                                            <thead bgcolor="#eeeeee">
-                                                <tr>
-                                                    <th>CONTOH</th>
-                                                    <th>Nama Pasien</th>
-                                                    <th> Action </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                            </tbody>
-                                        </table>
-                                        <canvas id="myAreaChart"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Content Row -->
                     <div class="row">
 
@@ -380,29 +335,60 @@
                             <!-- Project Card Example -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">Update Antrian Pasien</h6>
                                 </div>
                                 <div class="card-body">
-                                    <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="form-group">
+                                        <label for="focusedinput">ID Registraion</label>
+                                        <div>
+                                            <input type="hidden" name="idregis" class="form-control" id="focusedinput" value="" />
+                                            <input type='text' name='idregis' class='form-control' id='focusedinput' disabled value="" />
+                                        </div>
                                     </div>
-                                    <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="form-group">
+                                        <label for="nama">Nama Pasien</label>
+                                        <div>
+                                            <input type="text" name="idpasien" class="form-control" id="focusedinput" disabled value="" />
+                                        </div>
                                     </div>
-                                    <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                    <div class="form-group">
+                                        <label>Dokter Tersedia</label>
+                                        <div>
+                                            <select name="idkategori" class="form-control">
+                                            </select>
+                                        </div>
                                     </div>
-                                    <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                    <div class="form-group">
+                                        <label for="focusedinput">Pra-Diagnosa</label>
+                                        <div>
+                                            <input type='text' name='Prediag' class='form-control' id='Prediag' placeholder='Maksimal 500 Kata' value="" />
+                                        </div>
                                     </div>
-                                    <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="form_group">
+                                        <label for="focusedinput">Alergi</label>
+                                        <div>
+                                            <input type='text' name='Alergi' class='form-control' id='Alergi' placeholder='Maksimal 500 Kata' value="" />
+                                        </div>
                                     </div>
+                                    <br>
+                                    <div class="form_group">
+                                        <label for="focusedinput">Obat-Obatan Sebelumnya</label>
+                                        <div>
+                                            <input type='text' name='Obat' class='form-control' id='Obat' placeholder='Maksimal 500 Kata' value="" />
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form_group">
+                                        <label for="focusedinput">Tekanan Darah</label>
+                                        <div>
+                                            <input type='text' name='Tkndrh' class='form-control' id='Tkndrh' placeholder='Maksimal 500 Kata' value="" />
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button type="submit" class="btn btn-primary btn-block" id="updatePasien" name="updatePasien">Kirim</button>
                                 </div>
                             </div>
 
@@ -469,5 +455,48 @@
         <script src="<?php echo ASSETS_DIR; ?>js/sb-admin-2.min.js"></script>
 
 </body>
+<!-- edit -->
+<script>
+    $(document).ready(function() {
+        $("#updatePasien").click(function() {
+            var site = "<?php echo base_url(); ?>";
+
+            var id_item = "<?php echo $this->uri->segment(3); ?>";
+
+            var Prediagnosa = $('#Prediag');
+            var Prediagnosa = Prediagnosa.val();
+
+            var Alerg = $('#Alergi');
+            var Alerg_val = Alerg.val();
+
+            var Prevmed = $('#Obat');
+            var Prevmed_val = Prevmed.val();
+
+            var Tekdar = $('#Tkndrh');
+            var Tekdar_val = Tekdar.val();
+
+
+            if (Kategori_val != '' && NmItem_val != '' && HrgItem_val != '') {
+                $.ajax({
+                    type: "POST",
+                    url: site + "/Updatepasien/ProcesUpdateItem",
+                    data: {
+                        IdItem: id_item,
+                        Diag: Prediagnosa_val,
+                        Alg: Alerg_val,
+                        Obt: Prevmed_val,
+                        Tkn_drh: Tekdar_val
+                    },
+                    success: function() {
+                        alert('Item Berhasil Diubah !!!');
+                        window.location.href = site + "/Updatepasien/index";
+                    }
+                });
+            } else {
+                location.reload();
+            }
+        });
+    });
+</script>
 
 </html>
